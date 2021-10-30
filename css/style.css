@@ -1,0 +1,482 @@
+/* *{
+    border: 2px solid black;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EBDEF0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ScrollBar Animation  */
+body::-webkit-scrollbar {
+    box-shadow: inset 0 0 5px rgb(97, 97, 97);
+    width: 0.5em;
+  }
+
+  body::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px rgb(19, 18, 18);
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #00a014;
+  }
+ /* ScrollBar Animation End */
+
+
+ /* Navbar Section Start */
+ .navbar{
+    position: fixed;
+    background-color:#393e46;
+    width:100%;
+    margin:auto;
+    padding: 0px 10px;
+    height: auto;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px;
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+.mlogo{
+    position: relative;
+    /* filter: grayscale(100%); */
+    -webkit-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.nlogo
+  {
+    position: absolute;
+    top: 15px;
+    left: 39px;
+  }
+
+.nav-content li a{
+    color:#00a014;
+    margin-left:30px;
+    font-size: 22px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Rationale', sans-serif;
+}
+
+.nav-content li a:hover{
+    color: #ff3c00;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.icon-menu{
+    font-size: 30px;
+    color:#00a014;
+    cursor: pointer;
+    display:none;
+}
+
+.icon-menu:hover{
+    color: #ff3c00;
+}
+
+.close-mobile-btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 3px;
+    right:45px;
+}
+
+.nav-menu{
+    display:inline-flex;
+    list-style: none; 
+}
+
+.navbar-brand{
+    font-family: 'Amita', cursive;
+}
+
+.lgo{
+    color: #00a014;
+}
+
+.poe{
+    color: #FF5A03;
+}
+
+ /* Navbar Section End */
+
+
+/* Slider Section Start */
+.carousel-inner{
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.63);
+-webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.63);
+}
+/* Slider Section End */
+
+
+/* about section Start */
+#about{
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.myname{
+    color: #00a014;
+    font-weight: bolder;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-family: 'Amita', cursive;
+    text-shadow: 1px 2px 3px #666;
+}
+
+#info{
+    font-family: 'Aref Ruqaa', serif; 
+}
+
+.type{
+    color: #FF4B00;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.dowcv a{
+    color: #00a014;
+    text-decoration: none;
+    border: 2px solid #00a014;
+    border-radius: 10px;
+    font-family: 'Bellota', cursive;
+    font-weight: bold;
+}
+
+.dowcv a:hover{
+    color: #ff3c00;
+    background-color: #34495E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+/* About section End */
+
+
+/* Poem section start  */
+.card-main{
+    overflow-x: hidden;
+}
+#poem{
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.pem{
+    color: #00a014;;
+}
+
+.pom{
+    color: #ff3c00;
+}
+
+.card{
+    /* background-color: #E8F6F3; */
+    background: rgb(255,233,180);
+    background: linear-gradient(90deg, rgba(255,233,180,1) 0%, rgba(240,201,255,1) 50%, rgba(190,255,214,1) 100%);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.72) inset;
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.72) inset;
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.72) inset;
+}
+
+.card-header{
+    background-color: #34495E;
+    color: #FF5A03;
+    font-weight: bold;
+}
+
+#mypoem{
+    font-size: 1.2em;
+    color: #2F031B;
+    font-weight: bold;
+    font-family: 'Nova Oval', cursive;
+}
+
+#writer{
+    font-size: 1.3em;
+    color: #FF4200;
+    font-weight: bolder;
+}
+/* Poem section End */
+
+/* Footer Section Start */
+.desg{
+    font-family: 'Rationale', sans-serif;
+}
+
+#footer{
+    background-color: #393e46;
+}
+
+/* Social icon Section Start */
+.fab{
+    color: #00a014;
+}
+
+/* Social icon hover Start */
+.fa-facebook-f:hover{
+    color: #3b5999;
+    transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+    color: #55acee;
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover{
+    color: #e4405f;
+    transform: scale(1.2);
+}
+
+.fa-linkedin-in:hover{
+    color: #0077B5;
+    transform: scale(1.2);
+}
+
+.fa-pinterest-p:hover{
+    color: #bd081c;
+    transform: scale(1.2);
+}
+
+.fa-whatsapp:hover{
+    color: #25D366;
+    transform: scale(1.2);
+}
+
+.fa-telegram-plane:hover{
+    color: #0088cc;
+    transform: scale(1.2);
+}
+/* Social icon hover end */
+
+.poemicon img:hover{
+    transform: scale(1.2);
+}
+
+.fa-phone-alt{
+    color: #00ac17;
+}
+
+.fa-envelope{
+    color: royalblue;
+}
+
+.fa-map-marker-alt{
+    color: rgb(255, 0, 0);
+}
+
+.cont1 .linf a{
+    text-decoration: none;
+    color: #dbdbdb;
+    font-weight: 500;
+    font-family: 'Delius Swash Caps', cursive;
+}
+
+/* #contact{
+    font-family: 'Aref Ruqaa', serif; 
+} */
+
+hr.hrd{
+    width: 100%;
+    border-top: 2px solid #00ac17;
+}
+
+.copyrgt{
+    font-family: 'Lobster Two', cursive;
+}
+
+.ftr{
+    color: rgb(255, 72, 0);
+    text-decoration: none;
+    font-weight: bold;
+    /* font-family: 'Rationale', sans-serif; */
+    font-family: 'Amita', cursive;
+    letter-spacing: 3px;
+    font-size: 20px;   
+}
+
+.ftr:hover{
+    color: #00a014;
+}
+/* Footer Section End */
+
+
+/* Media Query Section Start */
+@media screen and (max-width: 950px){
+
+    body.disabled-scroll{
+        overflow: hidden;
+    }
+
+    .nav-menu{
+        display:block;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width:100%;
+        background-color: #393e46;
+        /* background-color: transparent; */
+        padding: 30px 0;
+        height: 100vh;
+        max-width: 100%;
+        text-align:center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.active{
+        left: 0%;
+    }
+
+    .icon-menu{
+        display:block;
+    }
+
+    .icon-menu.hidden{
+        display: none;
+    }
+
+    .nav-menu li{
+        margin-top: 10px;
+    }
+
+    .nav-menu li a{
+        margin-left: 0;
+        padding:15px;
+        display:block;
+    }
+
+}
+/* Media Query Section End */
+  
+
+/* Preloder Section Start */
+  #loder{
+      width: 100%;
+      height: 100%;
+      background: #0B0B0B;
+      text-align: center;
+      padding: auto;
+      position: fixed;
+      z-index: 1000;
+  }
+
+  /*START LOADER DESIGN*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+	-ms-transform: rotate(-135deg); 
+	-moz-transform: rotate(-135deg); 
+   	-webkit-transform: rotate(-135deg); 
+    transform: rotate(-135deg);
+	z-index: 1001;
+}
+.object{
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+	position: absolute;
+	border-top: 5px solid #FFF;
+	border-bottom: 5px solid transparent;
+	border-left:  5px solid #FFF;
+	border-right: 5px solid transparent;
+	-webkit-animation: animate 2s infinite;
+	animation: animate 2s infinite;	
+}
+#object_one{
+	left: 75px;
+	top: 75px;
+	width: 50px;
+	height: 50px;
+}
+#object_two{
+	left: 65px;
+	top: 65px;
+	width: 70px;
+	height: 70px;
+	-webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+#object_three{
+	left: 55px;
+	top: 55px;
+	width: 90px;
+	height: 90px;
+	-webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+#object_four{
+	left: 45px;
+	top: 45px;
+	width: 110px;
+	height: 110px;
+	-webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}	
+
+@-webkit-keyframes animate {
+ 
+50% {
+	-ms-transform: rotate(360deg) scale(0.8); 
+	-moz-transform: rotate(360deg) scale(0.8); 
+   	-webkit-transform: rotate(360deg) scale(0.8); 
+    transform: rotate(360deg) scale(0.8); 
+  }
+}
+
+@keyframes animate {
+	
+50% {
+	-ms-transform: rotate(360deg) scale(0.8); 
+	-moz-transform: rotate(360deg) scale(0.8); 
+   	-webkit-transform: rotate(360deg) scale(0.8); 
+    transform: rotate(360deg) scale(0.8); 
+  }	
+}
+/* Preloder Section End */

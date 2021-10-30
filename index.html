@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="image/icon/icon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guruvar Datt Puri</title>
+
+    <!-- AOS Animation Css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Fontawsome CDN link -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Amita:wght@700&family=Aref+Ruqaa:wght@700&family=Bellota&family=Cantata+One&family=Delius+Swash+Caps&family=Inknut+Antiqua&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <!--Fontawsom all styles -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- PreLoder Section Start -->
+    <div id="loder">
+        <div id="loader-wrapper">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+    <!-- PreLoder Section End -->
+
+    <!-- Navbar Section -->
+    <nav class="navbar border-bottom">
+        <div class="container-fluid mx-1 nav-content">
+            <div onclick="handleclick" class="logo">
+                <img src="image/logo/p.png" alt="" width="75px" height="75px" class="mlogo m-1">
+                <img src="image/logo/l.png" alt="Logo" width="45px" height="45px" class="nlogo m-1">
+                <a class="navbar-brand ms-2 fs-2 fw-bolder" href="#"><span class="lgo">Guru</span><span
+                        class="poe">poeM</span></a>
+            </div>
+            <ul class="nav-menu">
+                <div class="icon-menu close-mobile-btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li class="mt-3"><a href="#">HOME</a></li>
+                <li class="mt-3"><a href="poem.html">POEM</a></li>
+                <li class="mt-3"><a href="#footer">CONTACT</a></li>
+            </ul>
+            <div class="icon-menu mobile-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <br><br><br>
+    <!-- Slider Section -->
+    <div class="container g-slide" id="slide">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators mb-1">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="image/slide/s1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slide/s2.jpg" class=" w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slide/s3.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slide/s4.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slide/s5.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slide/s6.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- About Me Section Start -->
+    <section class="about my-5 mb-5" id="abt">
+        <div class="container ">
+            <div>
+                <h1 data-aos="flip-up" class="text-center" id="about"><span class="text-primary">About </span>Me</h1>
+                <hr class="w-25 m-auto">
+            </div>
+            <div class="row" id="info">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-5">
+                    <h2 class="mt-2 mb-2">Hi</h2>
+                    <h1 class=" mb-1">i'm <span class="myname">Guruvar</span></h1>
+                    <h2>and i'm a <span class="type"></span></h2>
+                    <p class="mt-3 mb-5 fs-5">Guruvar Datt Puri is a students of Pharmacy. He loves to watch reality tv,
+                        and He reads many books. He loves poem so, He written many poems on the social elives, loves and
+                        many others topic. In his spare time Guruvar plays badminton and listening music. He wants
+                        becomes a ias officer. Thats why Guruvar sensier to his goals.</p>
+                    <div class="dowcv">
+                        <a href="document/guruvarCV.pdf" class="mt-5 p-2 fs-5 "><span class="cv">DOWNlOAD CV </span><i
+                                class="fas fa-file-alt"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-5 text-end">
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        src="image/m.png" class="img-fluid g-image" alt="Guruvar Image" width="500px" height="500px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section End -->
+
+
+    <!-- Footer section start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#393e46" fill-opacity="1"
+            d="M0,320L48,304C96,288,192,256,288,229.3C384,203,480,181,576,176C672,171,768,181,864,197.3C960,213,1056,235,1152,229.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <footer class="container-fluid text-light " id="footer">
+        <section class="about mb-5" id="#">
+            <div class="container ">
+                <div class="row" id="sicon">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-3">
+                        <h5 class="mt-2 mb-4 desg">Follow Us</h5>
+                        <div class="social-icon mb-4">
+                            <a href="https://www.facebook.com/guruvardatt.puri" class="p-1 m-2 fs-2 "><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/guruvardattpuri" class="p-1 m-2 fs-2 "><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/guru__dpuri" class="p-1 m-2 fs-2 "><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="" class="p-1 m-2 fs-2 "><i class="fab fa-linkedin-in"></i></a>
+                            <a href="" class="p-1 m-2 fs-2 "><i class="fab fa-pinterest-p"></i></a>
+                            <a href="https://wa.me/917519789445?text=Hello%2C%0A%20%20%20%20%20%20%20GURUVAR"
+                                class="p-1 m-2 fs-2 "><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://t.me/guruavardatt" class="p-1 m-2 fs-2 "><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                        <div class="poemicon mb-5 mt-3">
+                            <a href="https://nojoto.com/profile/dce7984e87250f9577b0293130bf9fe2/guruvar-datt-puri"
+                                class="px-2 m-2"><img src="image/logo/nj.png" alt="" width="70px" height="70px"></a>
+                            <a href="https://www.yourquote.in/guruvar-datt-puri-cg6f9/quotes" class="px-2 m-2"><img
+                                    src="image/logo/uq.png" alt="" width="70px" height="70px"></a>
+                            <a href="" class="px-2 m-2"><img src="image/logo/pl.png" alt="" width="70px"
+                                    height="70px"></a>
+                        </div>
+                        <div class="cont1">
+                            <span class="linf"><i class="fas fa-phone-alt"></i>&nbsp; <a href="tel:7519789445">+91
+                                    7519789445</a></span><br><br>
+                            <span class="linf"><i class="fas fa-envelope"></i>&nbsp; <a
+                                    href="mailto:guruvardatt@gmail.com">guruvardatt@gmail.com</a></span><br><br>
+                            <span class="linf"><i class="fas fa-map-marker-alt"></i>&nbsp; <a
+                                    href="https://www.google.co.in/maps/place/Bettiah,+Bihar/@26.8008924,84.4962116,14z/data=!4m5!3m4!1s0x39936ebc52d7b7fd:0xc4ca14bb8ee79f28!8m2!3d26.8025577!4d84.520147?hl=en">Bettiah,
+                                    Bihar, 845438</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 cal-xl-6 cal-xxl-6 col-12 mt-1 text-end">
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            src="image/logo/g.png" class="img-fluid mx-auto d-block mt-4 mb-4 g-logo"
+                            alt="Guruvar Image" width="300px" height="300">
+                        <div class="con mx-5">
+                            <h5 class="text-start mb-3 desg">Contact</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address"
+                                    aria-label="Recipient's username with two button addons">
+                                <button class="btn btn-outline-secondary" type="button">Continue</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hrd">
+        <div class="text-center fs-5 mt-4 copyrgt">
+            Copyright <i class="far fa-copyright"></i> 2021 All rights reserved | This template is made by &nbsp;<a
+                href="https://pbprotfolio.netlify.app/" class="ftr">PUJYAVAR</a><br><br>
+        </div>
+    </footer>
+    <!-- Footer section End -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JavaScript Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1300,
+        });
+    </script>
+
+    <!-- FontAwsome Js Link -->
+    <script src="/css/all.css"></script>
+
+    <!--    typeJs library-->
+    <script src="/js/typed.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.type', {
+            strings: ['Student', 'Pharmassist', 'Story Writer', 'Poem Writer'],
+            smartBackspace: true,
+            typeSpeed: 120,
+            loop: true
+        });
+    </script>
+
+    <!-- Navbar Script -->
+    <script>
+        const body = document.querySelector('body');
+        const navbar = document.querySelector('.navbar');
+        const navMenu = document.querySelector('.nav-menu');
+        const mobileButton = document.querySelector('.mobile-btn');
+        const closeMobileButton = document.querySelector('.close-mobile-btn');
+        mobileButton.onclick = () => {
+            navMenu.classList.add('active')
+            mobileButton.classList.add('hidden')
+            body.classList.add('disabled-scroll')
+        }
+
+        closeMobileButton.onclick = () => {
+            navMenu.classList.remove('active')
+            mobileButton.classList.remove('hidden')
+            body.classList.remove('disabled-scroll')
+        }
+    </script>
+
+    <!-- vanilla-tilt.js Plugin Link -->
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".g-image"),
+            {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+    </script>
+
+    <!-- Sweet Alert Link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        window.onload = function () {
+            swal({
+                title: "💚 W E L C O M E 💚",
+                text: "to my Website 🌎",
+                type: "success",
+                icon: "success",
+            });
+        }
+    </script>
+
+    <!-- Jquery Cdn Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Preloder Script -->
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $("#loder").fadeOut(500);
+            }, 4000);
+        })
+    </script>
+
+</body>
+
+</html>
